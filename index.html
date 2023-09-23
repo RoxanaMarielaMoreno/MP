@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"></link>
+    <title>Piedra, Papel o Tijera</title>
+</head>
+<body>
+
+    <header>
+        <h1 class="game-name">GAME ONE</h1>
+        <p>Piedra, Papel o Tijera</p>
+    </header>
+    
+    <main>
+        <p class="instructions" id="instructions">
+            El mejor de 5.
+        </p>
+        <div class="marker">
+            <p class="player human">Human</p>
+            <p class="player pc">AI</spa>
+        
+            <div class="points">
+                <span id="points-human">0</span>
+                <span>-</span>
+                <span id="points-AI">0</span>
+            </div>
+        </div>
+
+        <div class="game" id="game">
+            <div class="weapon-title">
+                <h2>Elegí tu arma</h2>
+            </div>
+            <div class="weapons">
+                <img class="weapon" id="btn-rock" src="./imagenes/Piedra.PNG"></img>
+                <img class="weapon" id="btn-paper" src="./imagenes/Papel.PNG"></img>
+                <img class="weapon" id="btn-scissors" src="./imagenes/Tijeras.PNG"></img>
+            </div>
+        </div>
+
+         <div class="message disabled" id="message">
+            <p>
+                Usaste <span class="move" id="user-move">papel</span><br>
+                y la computadora usó <span class="move" id="pc-move">piedra</span>
+            </p>
+            <p id="win-point">¡Ganaste un punto!</p>
+        </div>
+        <button class="btn disabled" id="restart">Reiniciar juego</button>
+
+    </main>
+
+    <script src="logica.js"></script>
+    
+</body>
+</html>
